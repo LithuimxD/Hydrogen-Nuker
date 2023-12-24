@@ -22,7 +22,7 @@ chm=0
 global err
 err=0
 def print_message(action,success=True,response_code=None):
-	if success:status=f"{Fore.BLUE}[ + ]"
+	if success:status=f"{Fore.BLUE}[ ~ ]"
 	else:status=f"{Fore.BLUE}[ ! ]"
 	if response_code is not None:status+=f" Response Code: {response_code}"
 	print(f"{status}     {action}")
@@ -215,7 +215,7 @@ ascii = """
 ██║  ██║   ██║   ██████╔╝██║  ██║╚██████╔╝╚██████╔╝███████╗██║ ╚████║
 ╚═╝  ╚═╝   ╚═╝   ╚═════╝ ╚═╝  ╚═╝ ╚═════╝  ╚═════╝ ╚══════╝╚═╝  ╚═══╝
                                                                   
- [<                    ||    Lithuim xD   ||                      >]
+ [<                 || made by Lithuim xD   ||                   >]
                               
 
 
@@ -229,7 +229,7 @@ ascii2 = """
 ║ [ 7 ] - Mass Dm                ║ [ 8 ] - Full Nuke              ║ [ 9 ] - - - - - - - - - - - -  ║
 ╚════════════════════════════════╩════════════════════════════════╩════════════════════════════════╝"""
 clear()
-set_console_title(f"Reaper")
+set_console_title(f"Hydrogen Nuker")
 print(Colorate.Vertical(Colors.blue_to_white, Center.XCenter(ascii)))
 tkn = get_valid_token()
 svr = get_valid_guild("[ + ]     Server ID: ", is_valid_guild_id)
