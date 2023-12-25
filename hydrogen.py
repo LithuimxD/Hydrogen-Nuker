@@ -130,7 +130,7 @@ def ban_all(guild_id,token):
 	members=open('scraped/members.txt','r').read().splitlines();threads=[]
 	for member in members:t=threading.Thread(target=ban,args=(guild_id,member,token));threads.append(t);t.start()
 	for t in threads:t.join()
-	print_message(f"Banned {len(banned)}/{len(members)}")
+	print_message(f"Lithuim banned {len(banned)}/{len(members)}")
 def dm_all_users(token,server,message,file_path='scraped/members.txt'):
 	headers={'Authorization':f"Bot {token}",'Content-Type':'application/json'}
 	with open(file_path,'r')as file:user_ids=[line.strip()for line in file]
